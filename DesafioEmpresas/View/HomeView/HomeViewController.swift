@@ -59,5 +59,4 @@ class HomeViewController: UIViewController {
          
          navigationItem.searchController = UISearchController(nibName: "Buscar...", bundle: .none)
      }
-
 }

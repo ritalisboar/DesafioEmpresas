@@ -26,11 +26,12 @@ class LoginViewController: UIViewController, UITextViewDelegate {
     private func buildView2() {
         view = LoginView()
         customLoginView = view as? LoginView
+
     }
     
     @objc
     func buttonAction() {
-        let homeVC = TestViewController()
+        let homeVC = HomeViewController()
         let navVC = UINavigationController(rootViewController: homeVC)
         present(navVC, animated: true)
 //        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: HomeView())
@@ -42,12 +43,6 @@ class LoginViewController: UIViewController, UITextViewDelegate {
     func configureUI() {
         navigationItem.rightBarButtonItem = .none
     }
-}
-
-class TestViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemPink
-    }
+    
 }
 

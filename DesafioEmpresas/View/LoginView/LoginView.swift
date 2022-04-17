@@ -75,8 +75,8 @@ final class LoginView: UIView {
     }
     
     // MARK: - loginContentView
-    private lazy var loginContentView: UIStackView = {
-        let loginContentView = UIStackView()
+    private lazy var loginContentView: UIView = {
+        let loginContentView = UIView()
         loginContentView.backgroundColor = .white
         loginContentView.addSubview(emailTitle)
         loginContentView.addSubview(emailTextField)
@@ -93,8 +93,7 @@ final class LoginView: UIView {
         loginContentView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         loginContentView.heightAnchor.constraint(equalToConstant: 356).isActive = true
     }
-
-
+    
     // MARK: - loginInfosUser / emailTitle
     
     private lazy var orientation: UILabel = {
