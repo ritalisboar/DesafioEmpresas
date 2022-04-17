@@ -8,7 +8,7 @@
 import UIKit
 
 final class LoginView: UIView {
-
+    
     // MARK: - background
     private lazy var backgroundImage: UIImageView = {
         let imageBack = UIImageView()
@@ -64,7 +64,6 @@ final class LoginView: UIView {
         wellcomeText.text = "Você está no Empresas."
         wellcomeText.font = UIFont(name: "Gilroy-Regular", size: 24)
         wellcomeText.translatesAutoresizingMaskIntoConstraints = false
-//        wellcomeText.font = UIFont(name: "Gilroy-Bold", size: 24)
         return wellcomeText
     }()
     
@@ -82,7 +81,7 @@ final class LoginView: UIView {
         loginContentView.addSubview(emailTextField)
         loginContentView.addSubview(senhaTitle)
         loginContentView.addSubview(senhaTextField)
-//        backgroundView.addSubview(entrarButton)
+        loginContentView.addSubview(entrarButton)
         loginContentView.translatesAutoresizingMaskIntoConstraints = false
         return loginContentView
     }()
@@ -109,7 +108,6 @@ final class LoginView: UIView {
         orientation.topAnchor.constraint(equalTo: loginContentView.topAnchor, constant: 24).isActive = true
         orientation.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 25).isActive = true
     }
-    
     
     private lazy var emailTitle: UILabel = {
         let emailTitle = UILabel()
@@ -167,7 +165,6 @@ final class LoginView: UIView {
         senhaTitle.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32).isActive = true
     }
     
-    
     private lazy var senhaTextField: UITextField = {
         let senhaTextField = UITextField()
         senhaTextField.placeholder = "Senha"
@@ -191,22 +188,14 @@ final class LoginView: UIView {
     
      // MARK: - entrarButtom
 
-    @objc
-    func activeButton() {
-        let test = LoginViewController()
-        test.buttonAction()
-    }
-
-   private lazy var entrarButton: UIButton = {
+    lazy var entrarButton: UIButton = {
         let entrarButton = UIButton()
        entrarButton.backgroundColor = UIColor(named: "ButtonColor")
        entrarButton.setTitle("ENTRAR", for: .normal)
        entrarButton.titleColor(for: .application)
        entrarButton.tintColor = .white
        entrarButton.layer.cornerRadius = 23
-       entrarButton.addTarget(self, action: #selector(activeButton), for: .touchUpInside)
        entrarButton.tag = 1
-       self.addSubview(entrarButton)
        entrarButton.clipsToBounds = true
        entrarButton.translatesAutoresizingMaskIntoConstraints = false
         return entrarButton

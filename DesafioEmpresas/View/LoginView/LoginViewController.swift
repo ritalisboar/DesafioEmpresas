@@ -16,6 +16,10 @@ class LoginViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         buildView1()
         buildView2()
+        
+        customLoginView?.entrarButton.addAction(UIAction { [weak self] _ in
+            self?.buttonAction()
+        }, for: .touchUpInside)
     }
 
     private func buildView1() {
@@ -29,15 +33,14 @@ class LoginViewController: UIViewController, UITextViewDelegate {
 
     }
     
-    @objc
-    func buttonAction() {
+    // MARK: - entrarButton
+    
+    private func buttonAction() {
         let homeVC = HomeViewController()
-        let navVC = UINavigationController(rootViewController: homeVC)
-        present(navVC, animated: true)
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: HomeView())
-//        navigationController?.pushViewController(homeViewController, animated: true)
-//        self.navigationController?.pushViewController(homeViewController, animated: true)
-        print("chegou")
+        navigationController?.pushViewController(homeVC, animated: true)
+//        navigationController?.navigationBar.isTranslucent = true
+//        navigationItem.hidesBackButton = false
+        print("login")
     }
     
     func configureUI() {
@@ -46,3 +49,9 @@ class LoginViewController: UIViewController, UITextViewDelegate {
     
 }
 
+class SecondView: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemPink
+    }
+}

@@ -18,8 +18,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
         window?.makeKeyAndVisible()
-        let nav = UINavigationController(rootViewController: LoginViewController())
+        let nav = UINavigationController(rootViewController: DetailsViewController())
         window?.rootViewController = nav
+        
+        UINavigationBar.appearance().barTintColor = UIColor.systemPink
     }
 
 //    func sceneDidDisconnect(_ scene: UIScene) {

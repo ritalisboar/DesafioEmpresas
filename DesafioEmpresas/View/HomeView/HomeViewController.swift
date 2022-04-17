@@ -7,13 +7,18 @@
 
 import UIKit
 
+
+
 class HomeViewController: UIViewController {
+    
+    private let identifier = "HomeViewController"
 
     private var customHomeView: HomeView? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         buildHomeView()
+    
         configureNavTable()
         // Do any additional setup after loading the view.
     }
@@ -23,15 +28,10 @@ class HomeViewController: UIViewController {
         customHomeView = view as? HomeView
     }
     
-    @objc
-    func buttonAction() {
+    private func backButton() {
         let homeVC = HomeViewController()
-        let homeViewController = UINavigationController(rootViewController: homeVC)
-        present(homeViewController, animated: true)
-//        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: HomeView())
-//        navigationController?.pushViewController(homeViewController, animated: true)
-//        self.navigationController?.pushViewController(homeViewController, animated: true)
-        print("chegou")
+        navigationController?.pushViewController(homeVC, animated: true)
+        print("Home")
     }
 
     // MARK: - Navigation
@@ -42,21 +42,15 @@ class HomeViewController: UIViewController {
 
      func configureNavTable() {
          view.backgroundColor = .white
-         navigationController?.navigationBar.prefersLargeTitles = true
-         navigationController?.navigationBar.titleTextAttributes = [
-            .foregroundColor: UIColor.black,
-            .font: UIFont(name: "Gilroy-Bold", size: 40)!
-         ]
-         navigationItem.title = "Pesquise por uma empresa"
-         navigationController?.navigationBar.tintColor = .black
-         
-         navigationItem.rightBarButtonItem = UIBarButtonItem(
-            image: UIImage(systemName: "arrow.left"),
-            style: .plain,
-            target: self,
-            action: #selector(backHome)
-         )
-         
-         navigationItem.searchController = UISearchController(nibName: "Buscar...", bundle: .none)
+//         self.navigationController?.navigationBar.isTranslucent = true
+
+//         navigationItem.leftBarButtonItem = UIBarButtonItem(
+//            image: UIImage(systemName: "arrow.left"),
+//            style: .plain,
+//            target: self,
+//            action: #selector(backHome)
+//         )
+//
+//         navigationItem.searchController = UISearchController(nibName: "Buscar...", bundle: .none)
      }
 }

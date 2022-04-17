@@ -6,11 +6,10 @@
 //
 
 import UIKit
-
-private let reuseIdentifier = "Cell"
+ 
 
 class HomeCollectionViewController: UICollectionViewController {
-
+    let reuseIdentifier = "Cell"
     override func viewDidLoad() {
         super.viewDidLoad()
 

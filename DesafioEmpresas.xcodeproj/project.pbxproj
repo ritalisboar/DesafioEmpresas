@@ -32,7 +32,6 @@
 		7E27DA712808D893007215BB /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E27DA702808D893007215BB /* Roboto-Medium.ttf */; };
 		7E27DA732808D8B4007215BB /* Heebo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E27DA722808D8B4007215BB /* Heebo-Medium.ttf */; };
 		7E27DA752808FA8C007215BB /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E27DA742808FA8C007215BB /* Gilroy-SemiBold.ttf */; };
-		7E27DA7728090250007215BB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E27DA7628090250007215BB /* SearchView.swift */; };
 		DC80CA36059B70B870551C0C /* Pods_DesafioEmpresas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8AF5A99819EB4699FA8B45 /* Pods_DesafioEmpresas.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +65,6 @@
 		7E27DA702808D893007215BB /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		7E27DA722808D8B4007215BB /* Heebo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Medium.ttf"; sourceTree = "<group>"; };
 		7E27DA742808FA8C007215BB /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
-		7E27DA7628090250007215BB /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		A64B0F76561A41E37A8B31BE /* Pods-DesafioEmpresas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioEmpresas.debug.xcconfig"; path = "Target Support Files/Pods-DesafioEmpresas/Pods-DesafioEmpresas.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,7 +190,6 @@
 				7E27DA6828070C58007215BB /* HomeView.swift */,
 				7E27DA6428070C20007215BB /* HomeCollectionViewController.swift */,
 				7E27DA6628070C32007215BB /* HomeCollectionViewCell.swift */,
-				7E27DA7628090250007215BB /* SearchView.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -334,7 +331,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E27DA2728060E53007215BB /* LoginViewController.swift in Sources */,
-				7E27DA7728090250007215BB /* SearchView.swift in Sources */,
 				7E27DA2328060E53007215BB /* AppDelegate.swift in Sources */,
 				7E27DA2528060E53007215BB /* SceneDelegate.swift in Sources */,
 				7E27DA6528070C20007215BB /* HomeCollectionViewController.swift in Sources */,
