@@ -124,7 +124,7 @@ final class LoginView: UIView {
         emailTitle.bottomAnchor.constraint(equalTo: emailTextField.topAnchor).isActive = true
     }
     
-    private lazy var emailTextField: UITextField = {
+    lazy var emailTextField: UITextField = {
         let emailTextField = UITextField()
         emailTextField.placeholder = "Email"
         emailTextField.resignFirstResponder()
@@ -165,7 +165,7 @@ final class LoginView: UIView {
         senhaTitle.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32).isActive = true
     }
     
-    private lazy var senhaTextField: UITextField = {
+    lazy var senhaTextField: UITextField = {
         let senhaTextField = UITextField()
         senhaTextField.placeholder = "Senha"
         senhaTextField.resignFirstResponder()

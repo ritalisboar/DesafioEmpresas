@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
         window?.makeKeyAndVisible()
-        let nav = UINavigationController(rootViewController: DetailsViewController())
+        let nav = UINavigationController(rootViewController: LoginViewController())
         window?.rootViewController = nav
         
         UINavigationBar.appearance().barTintColor = UIColor.systemPink

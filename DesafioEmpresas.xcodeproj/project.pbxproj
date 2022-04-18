@@ -16,9 +16,6 @@
 		7E27DA42280643C7007215BB /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E27DA40280643C7007215BB /* Gilroy-Regular.ttf */; };
 		7E27DA4D280648F2007215BB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E27DA4C280648F2007215BB /* LoginView.swift */; };
 		7E27DA50280703F8007215BB /* LoadingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E27DA4F280703F8007215BB /* LoadingProtocol.swift */; };
-		7E27DA532807053C007215BB /* LoadingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E27DA522807053C007215BB /* LoadingExtension.swift */; };
-		7E27DA55280705DB007215BB /* LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E27DA54280705DB007215BB /* LoadView.swift */; };
-		7E27DA5728070B4E007215BB /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E27DA5628070B4E007215BB /* LoginModel.swift */; };
 		7E27DA5928070B5B007215BB /* EmpresasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E27DA5828070B5B007215BB /* EmpresasModel.swift */; };
 		7E27DA5B28070B93007215BB /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E27DA5A28070B93007215BB /* LoginPresenter.swift */; };
 		7E27DA5D28070B9F007215BB /* EmpresasPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E27DA5C28070B9F007215BB /* EmpresasPresenter.swift */; };
@@ -27,11 +24,11 @@
 		7E27DA6528070C20007215BB /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E27DA6428070C20007215BB /* HomeCollectionViewController.swift */; };
 		7E27DA6728070C32007215BB /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E27DA6628070C32007215BB /* HomeCollectionViewCell.swift */; };
 		7E27DA6928070C58007215BB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E27DA6828070C58007215BB /* HomeView.swift */; };
-		7E27DA6B28070C81007215BB /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E27DA6A28070C81007215BB /* DetailsView.swift */; };
 		7E27DA6F2808D84C007215BB /* Heebo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E27DA6E2808D84C007215BB /* Heebo-Regular.ttf */; };
 		7E27DA712808D893007215BB /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E27DA702808D893007215BB /* Roboto-Medium.ttf */; };
 		7E27DA732808D8B4007215BB /* Heebo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E27DA722808D8B4007215BB /* Heebo-Medium.ttf */; };
 		7E27DA752808FA8C007215BB /* Gilroy-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E27DA742808FA8C007215BB /* Gilroy-SemiBold.ttf */; };
+		7EEE419E280CCCA900748F05 /* DetailsEmpresaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEE419D280CCCA900748F05 /* DetailsEmpresaView.swift */; };
 		DC80CA36059B70B870551C0C /* Pods_DesafioEmpresas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A8AF5A99819EB4699FA8B45 /* Pods_DesafioEmpresas.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,9 +46,6 @@
 		7E27DA40280643C7007215BB /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
 		7E27DA4C280648F2007215BB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7E27DA4F280703F8007215BB /* LoadingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingProtocol.swift; sourceTree = "<group>"; };
-		7E27DA522807053C007215BB /* LoadingExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingExtension.swift; sourceTree = "<group>"; };
-		7E27DA54280705DB007215BB /* LoadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadView.swift; sourceTree = "<group>"; };
-		7E27DA5628070B4E007215BB /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		7E27DA5828070B5B007215BB /* EmpresasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpresasModel.swift; sourceTree = "<group>"; };
 		7E27DA5A28070B93007215BB /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		7E27DA5C28070B9F007215BB /* EmpresasPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpresasPresenter.swift; sourceTree = "<group>"; };
@@ -60,11 +54,11 @@
 		7E27DA6428070C20007215BB /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
 		7E27DA6628070C32007215BB /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		7E27DA6828070C58007215BB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		7E27DA6A28070C81007215BB /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		7E27DA6E2808D84C007215BB /* Heebo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Regular.ttf"; sourceTree = "<group>"; };
 		7E27DA702808D893007215BB /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		7E27DA722808D8B4007215BB /* Heebo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Heebo-Medium.ttf"; sourceTree = "<group>"; };
 		7E27DA742808FA8C007215BB /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
+		7EEE419D280CCCA900748F05 /* DetailsEmpresaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsEmpresaView.swift; sourceTree = "<group>"; };
 		A64B0F76561A41E37A8B31BE /* Pods-DesafioEmpresas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioEmpresas.debug.xcconfig"; path = "Target Support Files/Pods-DesafioEmpresas/Pods-DesafioEmpresas.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +107,6 @@
 				7E27DA392806104A007215BB /* Model */,
 				7E27DA382806103E007215BB /* View */,
 				7E27DA3728061035007215BB /* Presenter */,
-				7E27DA512807051B007215BB /* Extensions */,
 				7E27DA3A2806429C007215BB /* Fonts */,
 				7E27DA3628061022007215BB /* Delegates */,
 				7E27DA2B28060E54007215BB /* Assets.xcassets */,
@@ -154,7 +147,6 @@
 		7E27DA392806104A007215BB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7E27DA5628070B4E007215BB /* LoginModel.swift */,
 				7E27DA5828070B5B007215BB /* EmpresasModel.swift */,
 			);
 			path = Model;
@@ -178,7 +170,6 @@
 			children = (
 				7E27DA2628060E53007215BB /* LoginViewController.swift */,
 				7E27DA4C280648F2007215BB /* LoginView.swift */,
-				7E27DA54280705DB007215BB /* LoadView.swift */,
 			);
 			path = LoginView;
 			sourceTree = "<group>";
@@ -198,7 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				7E27DA6228070BF4007215BB /* DetailsViewController.swift */,
-				7E27DA6A28070C81007215BB /* DetailsView.swift */,
+				7EEE419D280CCCA900748F05 /* DetailsEmpresaView.swift */,
 			);
 			path = DetailsView;
 			sourceTree = "<group>";
@@ -209,14 +200,6 @@
 				7E27DA4F280703F8007215BB /* LoadingProtocol.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		7E27DA512807051B007215BB /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				7E27DA522807053C007215BB /* LoadingExtension.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		85974C5F128AD3FD7226BDB3 /* Pods */ = {
@@ -336,13 +319,10 @@
 				7E27DA6528070C20007215BB /* HomeCollectionViewController.swift in Sources */,
 				7E27DA5D28070B9F007215BB /* EmpresasPresenter.swift in Sources */,
 				7E27DA6928070C58007215BB /* HomeView.swift in Sources */,
-				7E27DA532807053C007215BB /* LoadingExtension.swift in Sources */,
+				7EEE419E280CCCA900748F05 /* DetailsEmpresaView.swift in Sources */,
 				7E27DA5B28070B93007215BB /* LoginPresenter.swift in Sources */,
 				7E27DA6728070C32007215BB /* HomeCollectionViewCell.swift in Sources */,
 				7E27DA4D280648F2007215BB /* LoginView.swift in Sources */,
-				7E27DA5728070B4E007215BB /* LoginModel.swift in Sources */,
-				7E27DA6B28070C81007215BB /* DetailsView.swift in Sources */,
-				7E27DA55280705DB007215BB /* LoadView.swift in Sources */,
 				7E27DA50280703F8007215BB /* LoadingProtocol.swift in Sources */,
 				7E27DA6328070BF4007215BB /* DetailsViewController.swift in Sources */,
 				7E27DA5928070B5B007215BB /* EmpresasModel.swift in Sources */,

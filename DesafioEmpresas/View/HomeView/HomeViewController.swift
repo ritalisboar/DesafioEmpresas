@@ -42,15 +42,5 @@ class HomeViewController: UIViewController {
 
      func configureNavTable() {
          view.backgroundColor = .white
-//         self.navigationController?.navigationBar.isTranslucent = true
-
-//         navigationItem.leftBarButtonItem = UIBarButtonItem(
-//            image: UIImage(systemName: "arrow.left"),
-//            style: .plain,
-//            target: self,
-//            action: #selector(backHome)
-//         )
-//
-//         navigationItem.searchController = UISearchController(nibName: "Buscar...", bundle: .none)
      }
 }

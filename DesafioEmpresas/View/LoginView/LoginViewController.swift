@@ -9,22 +9,15 @@ import UIKit
 
 class LoginViewController: UIViewController, UITextViewDelegate {
     
-    private var customLoadingView: LoadView? = nil
     private var customLoginView: LoginView? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        buildView1()
         buildView2()
         
         customLoginView?.entrarButton.addAction(UIAction { [weak self] _ in
             self?.buttonAction()
         }, for: .touchUpInside)
-    }
-
-    private func buildView1() {
-        view = LoadView()
-        customLoadingView = view as? LoadView
     }
     
     private func buildView2() {
@@ -36,8 +29,12 @@ class LoginViewController: UIViewController, UITextViewDelegate {
     // MARK: - entrarButton
     
     private func buttonAction() {
-        let homeVC = HomeViewController()
-        navigationController?.pushViewController(homeVC, animated: true)
+        
+       var response = loginRequest(email: customLoginView?.emailTextField.text ?? "", password: (customLoginView?.senhaTextField.text) ?? "")
+        
+        print("response", response)
+//        let homeVC = HomeViewController()
+//        navigationController?.pushViewController(homeVC, animated: true)
 //        navigationController?.navigationBar.isTranslucent = true
 //        navigationItem.hidesBackButton = false
         print("login")

@@ -9,7 +9,7 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
-    private var customDetailsView: DetailsView? = nil
+    private var customDetailsView: DetailsEmpresaView? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,14 +19,14 @@ class DetailsViewController: UIViewController {
     
 
     private func buildDetaisView() {
-        view = DetailsView()
-        customDetailsView = view as? DetailsView
+        view = DetailsEmpresaView()
+        customDetailsView = view as? DetailsEmpresaView
     }
-    
-    private func backButton() {
-        let homeVC = HomeViewController()
-        navigationController?.pushViewController(homeVC, animated: true)
-        print("Home")
-    }
+//    
+//    private func backButton() {
+//        let homeVC = HomeViewController()
+//        navigationController?.pushViewController(homeVC, animated: true)
+//        print("Home")
+//    }
 
 }
