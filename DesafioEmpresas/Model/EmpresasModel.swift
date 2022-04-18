@@ -9,7 +9,7 @@ import Foundation
 
 struct EnterpriseTypeParams: Codable {
     let id: Int?
-    let enterprise_type_name: String?
+    let enterprise_type_name: [String]?
 }
 
 struct EnterpriseParams : Codable {
@@ -20,24 +20,18 @@ struct EnterpriseParams : Codable {
     let linkedin: String?
     let phone: String?
     let own_enterprise: Bool?
-    let enterprise_name: String?
-//    let photo: String?
-    let description: String?
-//    let city: String?
-//    let country: String?
-//    let value: Float?
+    let enterprise_name: [String]?
+    let description: [String]?
     let share_price: Float?
-//    let enterprise_type: EnterpriseTypeParams
 }
 
 struct PortfolioParams: Codable {
-//    let enterprises_number: Double?
     let enterprises: [EnterpriseParams]
 }
 
 struct UserParams: Codable {
-    let investor: InvestorParams
-    let enterprise: String?
+    let investor: [InvestorParams]
+    let enterprise: [String]?
     let success: Bool?
 }
 

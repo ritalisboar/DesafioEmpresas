@@ -7,8 +7,6 @@
 
 import UIKit
 
-
-
 class HomeViewController: UIViewController {
     
     private let identifier = "HomeViewController"
@@ -21,6 +19,8 @@ class HomeViewController: UIViewController {
     
         configureNavTable()
         // Do any additional setup after loading the view.
+        
+        getEnterprises(token: "kXQXcVbACOXdOLZN4ZBZ8w", client: "8MV5BfP1SjN8cZrzpCNMsw", uid: "testeapple@ioasys.com.br")
     }
     
     private func buildHomeView() {

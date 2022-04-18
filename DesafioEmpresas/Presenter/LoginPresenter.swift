@@ -12,7 +12,7 @@ var accessToken = ""
 var uid = ""
 var client = ""
 
-func loginRequest(email: String, password: String) -> Bool {
+func loginRequest(email: String, password: String) {
     let params = [
         "email": email,
         "password": password
@@ -25,8 +25,6 @@ func loginRequest(email: String, password: String) -> Bool {
     urlRequest.httpMethod = "POST"
     
     let postString = params.map { "\($0.0)=\($0.1)" }.joined(separator: "&")
-    
-    var returnData: Bool = false
     
     urlRequest.httpBody = postString.data(using: String.Encoding.utf8)
     
@@ -51,19 +49,21 @@ func loginRequest(email: String, password: String) -> Bool {
                 }
         
                 let response = try JSONSerialization.jsonObject(with: data, options: [])
+//                print(response)
                 
                 let object = try JSONDecoder().decode(UserParams.self, from: data)
                                 
                 print("enterprise:", object.enterprise)
                 print("success:", object.success)
                 print("investor:", object.investor)
-                returnData = object.success ?? false
+//                print("portfolio:", object.investor.portfolio)
+                
+
                 
             } catch {
                 print(error.localizedDescription)
             }
         }
-        
     }.resume()
-    return returnData
+    
 }

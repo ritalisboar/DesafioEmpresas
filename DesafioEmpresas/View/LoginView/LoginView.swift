@@ -137,11 +137,6 @@ final class LoginView: UIView {
         return emailTextField
         }()
     
-//    private func emailDoneEditing(_ emailTextField: UITextField) -> Bool {
-//        emailTextField.resignFirstResponder()
-//        return true
-//    }
-    
     private func constraintsEmailTextField() {
         emailTextField.topAnchor.constraint(equalTo: loginContentView.topAnchor, constant: 84).isActive = true
         emailTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24).isActive = true

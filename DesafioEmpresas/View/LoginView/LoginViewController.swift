@@ -33,8 +33,9 @@ class LoginViewController: UIViewController, UITextViewDelegate {
        var response = loginRequest(email: customLoginView?.emailTextField.text ?? "", password: (customLoginView?.senhaTextField.text) ?? "")
         
         print("response", response)
-//        let homeVC = HomeViewController()
-//        navigationController?.pushViewController(homeVC, animated: true)
+        
+        let homeVC = HomeViewController()
+        navigationController?.pushViewController(homeVC, animated: true)
 //        navigationController?.navigationBar.isTranslucent = true
 //        navigationItem.hidesBackButton = false
         print("login")
